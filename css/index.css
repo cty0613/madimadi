@@ -1,0 +1,65 @@
+.wrap {
+    position: absolute;
+    width: 1920px;
+    height: 1080px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+
+.navbar {
+    background-color: cornflowerblue;
+    position: relative;
+    margin-top: 64px;
+    margin-left: 96px;
+    margin-right: 96px;
+    margin-bottom: 8px;
+
+}
+
+.description {
+    display: inline-block;
+    height: 105px;
+    width: 445px;
+}
+
+.title {
+    
+}
+
+.description-para {
+
+}
+
+.menu {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+}
+
+.menu h2 {
+    text-align: right;
+}
+
+.main-container {
+    position: relative;
+    background-color: burlywood;
+    height: 632px;
+    margin-left: 96px;
+    margin-right: 96px;
+    margin-bottom: 8px;
+
+}
+
+
+.play-bar {
+    background-color: lightgreen;
+    position: relative;
+    height: 144px;
+    margin-left: 96px;
+    margin-right: 96px;
+}
+
+.play-bar div {
+    display: inline-block;
+}

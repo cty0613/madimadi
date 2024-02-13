@@ -1,0 +1,28 @@
+.invi {
+    visibility: hidden;
+}
+
+
+.question-container {
+    color: aliceblue;
+    background-color: black;
+    opacity: 0.4;
+}
+
+.question-container h3 {
+    text-align: center;
+    padding-top: 100px;
+    font-size: 64px;
+    font-weight: 900;
+}
+
+.answer {
+    display: grid;
+}
+
+.answer button {
+    font-size: 40px;
+    font-weight: 900;
+    width: 560px;
+    height: 185px;
+}
