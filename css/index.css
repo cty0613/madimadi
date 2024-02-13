@@ -110,3 +110,10 @@ div.credit{
 .seek-control img {
     padding: 21px 45px 17px;
 }
+
+.gohome {
+    padding-top: 20px;
+    font-size: 32px;
+    font-weight: 900;
+    font-style: normal;
+}

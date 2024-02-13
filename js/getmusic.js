@@ -41,7 +41,7 @@ const ans_data = [
     }
 ]
 
-
+var qNum = 1;
 
 $('.answer button').click((e)=>{
     var questionNum = $(e.currentTarget).attr('id').split('-')[0]
@@ -49,6 +49,9 @@ $('.answer button').click((e)=>{
     var selectedText = $(e.currentTarget).html();
     ans_data[questionNum-1].selectedAns = selectedNum;
     ans_data[questionNum-1].selectedStr = selectedText;
+    qNum++;
+    $(e.currentTarget).parent().parent().parent().fadeOut(500);
+    $('.p'+qNum).removeClass("invi").fadeIn(200);
 
 })
 
