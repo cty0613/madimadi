@@ -8,7 +8,6 @@
 }
 
 .navbar {
-    background-color: cornflowerblue;
     position: relative;
     margin-top: 64px;
     margin-left: 96px;
@@ -24,11 +23,21 @@
 }
 
 .title {
-    
+    color: #777777;
+    font-size: 32px;
+    /*font-family: Happiness Sans VF;*/
+    font-weight: 900;
+    word-wrap: break-word
 }
 
 .description-para {
-
+    color: #777777;
+    font-size:16px;
+    /*font-family: Happiness Sans VF;*/
+    font-weight:400;
+    text-align:left;
+    line-height:26px;
+    word-wrap: break-word
 }
 
 .menu {
@@ -38,12 +47,16 @@
 }
 
 .menu h2 {
+    color: #777777;
+    font-size: 32px;
+    /*font-family: Happiness Sans VF;*/
+    font-weight: 900;
+    word-wrap: break-word;
     text-align: right;
 }
 
 .main-container {
     position: relative;
-    background-color: burlywood;
     height: 632px;
     margin-left: 96px;
     margin-right: 96px;
@@ -53,7 +66,6 @@
 
 
 .play-bar {
-    background-color: lightgreen;
     position: relative;
     height: 144px;
     margin-left: 96px;
@@ -62,4 +74,39 @@
 
 .play-bar div {
     display: inline-block;
+}
+
+div.seek-control{
+    position:absolute;
+    top:10px;
+    left:600px;
+    z-index:1;
+    width:500px;
+    text-align:center;
+}
+
+div.reload{
+    position:absolute;
+    top:35px;
+    left:40px;
+    z-index:1;
+}
+
+div.credit{
+    position:absolute;
+    top:9px;
+    left:1370px;
+    z-index:1;
+
+    color: #777777;
+    font-size:16px;
+    /*font-family: Happiness Sans VF;*/
+    font-weight:400;
+    text-align:right;
+    line-height:26px;
+    word-wrap: break-word
+}
+
+.seek-control img {
+    padding: 21px 45px 17px;
 }
