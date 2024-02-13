@@ -63,3 +63,10 @@
 .play-bar div {
     display: inline-block;
 }
+
+.gohome {
+    padding-top: 20px;
+    font-size: 32px;
+    font-weight: 900;
+    font-style: normal;
+}

@@ -1,28 +1,45 @@
+
 .invi {
-    visibility: hidden;
+    opacity: 0.0;
 }
 
 
 .question-container {
-    color: aliceblue;
-    background-color: black;
-    opacity: 0.4;
+    position: relative;
 }
 
 .question-container h3 {
+    margin: 0px;
+    padding-top: 60px;
+    padding-bottom: 40px;
     text-align: center;
-    padding-top: 100px;
     font-size: 64px;
     font-weight: 900;
 }
 
 .answer {
-    display: grid;
+    display: inline-table;
+}
+
+.col {
+    margin-left: 292px;
+    display: inline-flex;
 }
 
 .answer button {
+    border: 0;
+    outline: 0;
     font-size: 40px;
     font-weight: 900;
+    margin-right: 24px;
+    margin-bottom: 24px;
     width: 560px;
     height: 185px;
+}
+
+.answer input {
+    margin-right: 24px;
+    margin-bottom: 24px;
+    width: 560px;
+    height: 85px;
 }
