@@ -145,3 +145,15 @@ a {
     font-weight: 900;
     word-wrap: break-word
 }
+
+.banner-wrapper {
+    position: absolute;
+    height: 650px;
+    width: 1920px;
+    overflow: hidden;
+}
+
+.banner-wrapper img {
+    position: absolute;
+    height: 632px;
+}
