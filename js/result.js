@@ -5,11 +5,47 @@ var parsedInfo = JSON.parse(info);
 
 console.log(parsedInfo)
 
-//function MusicFeature(q1, q2, q3, q4, q5, q6, q7) {
-//    switch (q5){
-//        case 
-//    }
-//}
+function MusicFeature(q1, q2, q3, q4, q5, q6, q7) {
+    var Category;
+    var dSel;
+    var Mood;
+    var BPM;
+    
+    switch (q5){
+        case 1 :
+            Category = "Grv_";
+            switch (q6){
+                case 1 :
+                    dSel = "JazzBrush_";
+                    BPM = 100;
+                    break;
+                case 2 :
+                    dSel = "JazzyRock_";
+                    BPM = 115;
+                    break;
+                case 3 :
+                    dSel = "PopGroove_";
+                    BPM = 115;
+                    break;
+                case 4 :
+                    dSel = "CrowdGroove_";
+                    BPM = 80;
+                    break;
+            }
+            break;
+        case 2 :
+            Category = "RnB_";
+            break;
+        case 3 :
+            Category = "Rock_";
+            break;
+        case 4 :
+            Category = "Ballad_";
+            break;
+    }
+
+    
+}
 
 parsedInfo[4]
 // Define audio files
