@@ -74,7 +74,7 @@
     display: inline-flex;
 }
 
-.a0 button{
+.answerSub button{
     background-color: #ffffff;
     color: #777777;
     border-color:#8D8D8D;
@@ -86,9 +86,15 @@
     margin-top: 40px;
     width: 560px;
     height: 120px;
-    right: 48.5%;
+    right: 50.5%;
     transform: translateX(50%);
     transition:  all 0.3s;
     position:absolute;
 
+}
+
+.answerSub button:hover {
+    background-color: #E3E2E2;
+    box-shadow: 2px 2px 2px;
+    border: 24;
 }

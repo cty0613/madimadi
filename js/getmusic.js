@@ -50,8 +50,8 @@ $('.answer button').click((e)=>{
     ans_data[questionNum-1].selectedAns = selectedNum;
     ans_data[questionNum-1].selectedStr = selectedText;
     qNum++;
-    $(e.currentTarget).parent().parent().parent().fadeOut(500);
-    $('.p'+qNum).removeClass("invi").fadeIn(200);
+    $('.p'+qNum).removeClass("invi").fadeIn(50);
+    $(e.currentTarget).parent().parent().parent().fadeOut(0);
 
 })
 
