@@ -20,7 +20,7 @@
     height: 598px;
     top: 0;
     left: 60px;
-    background: url(./assets/images/88d77dc6-1938-42fa-ad66-af4cfbe5f02f.png)
+    background: url()
       no-repeat center;
     background-size: cover;
     z-index: 1;
@@ -31,7 +31,7 @@
     top: 112px;
     right: 0;
     left: 0;
-    background: url(./assets/images/d45199fa-dfb2-4a0b-9e2f-826ac53e8cd9.png)
+    background: url()
       no-repeat center;
     background-size: cover;
   }
@@ -123,7 +123,13 @@
     margin: 162px 0 0 0;
     border: 4px solid #8d8d8d;
     z-index: 7;
+    transition:  all 0.3s;
   }
+
+  .box:hover {
+    background-color: #E3E2E2;
+}
+
   .text-1 {
     display: flex;
     align-items: flex-start;

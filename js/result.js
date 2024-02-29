@@ -5,6 +5,13 @@ var parsedInfo = JSON.parse(info);
 
 console.log(parsedInfo)
 
+//function MusicFeature(q1, q2, q3, q4, q5, q6, q7) {
+//    switch (q5){
+//        case 
+//    }
+//}
+
+parsedInfo[4]
 // Define audio files
 const audioFiles = [
     '../src/au/Drum/Funk_Jesse_95.mp3', // Drum
@@ -30,6 +37,11 @@ audioFiles.forEach((file, index) => {
 $('.pause').on('click', function() {
     // Stop all players
     players.forEach(player => player.stop());
+});
+
+$('.restart').on('click', function() {
+    var newUrl = "../index.html";
+    window.location.href = newUrl;
 });
 
 // Mix function

@@ -55,4 +55,10 @@ $('.answer button').click((e)=>{
 
 })
 
-sessionStorage.setItem('answers_data', JSON.stringify(ans_data));
+var newUrl = "../pages/load.html";
+
+$('.finish').click((e)=>{
+    sessionStorage.setItem('answers_data', JSON.stringify(ans_data));
+    window.location.href = newUrl;
+});
+
