@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Happiness-Sans-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/Happiness-Sans-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
 .wrap {
     position: absolute;
     width: 1920px;
@@ -26,7 +33,7 @@
 .title {
     color: #777777;
     font-size: 32px;
-    font-family: Happiness Sans VF;
+    font-family: Happiness-Sans-Bold;
     font-weight: 900;
     word-wrap: break-word
 }
@@ -34,7 +41,7 @@
 .description-para {
     color: #777777;
     font-size:16px;
-    font-family: Happiness Sans VF;
+    font-family: Happiness-Sans-Bold;
     font-weight:400;
     text-align:left;
     line-height:26px;
@@ -51,7 +58,7 @@
 .menu h2 {
     color: #777777;
     font-size: 32px;
-    font-family: Happiness Sans VF;
+    font-family: Happiness-Sans-Bold;
     font-weight: 900;
     word-wrap: break-word;
     text-align: right;
@@ -102,7 +109,7 @@ div.credit{
 
     color: #777777;
     font-size:16px;
-    font-family: Happiness Sans VF;
+    font-family: Happiness-Sans-Bold;
     font-weight:400;
     text-align:right;
     line-height:26px;
@@ -114,17 +121,22 @@ div.credit{
 }
 
 .gohome {
+    left: 26px; 
+    top: 0px; 
+    position: absolute;
+    text-align: right;
     padding-top: 20px;
     font-size: 32px;
     font-weight: 900;
-    font-style: normal;
+    font-family: Happiness-Sans-Bold;
+    word-wrap: break-word
 }
 
 a {
     text-decoration:none;
     color:#777777;
     font-size: 32px;
-    font-family: Happiness Sans VF;
+    font-family: Happiness-Sans-Bold;
     font-weight: 900;
     word-wrap: break-word
 }
