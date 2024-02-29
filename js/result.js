@@ -27,8 +27,13 @@ audioFiles.forEach((file, index) => {
     players.push(player);
 });
 
+$('.pause').on('click', function() {
+    // Stop all players
+    players.forEach(player => player.stop());
+});
+
 // Mix function
-$('#mixButton').on('click', function() {
+$('.box').on('click', function() {
     // Disconnect all players
     players.forEach(player => player.disconnect());
 
@@ -48,9 +53,4 @@ $('#mixButton').on('click', function() {
 
     // Start playback
     players.forEach(player => player.start());
-});
-
-$('#stopButton').on('click', function() {
-    // Stop all players
-    players.forEach(player => player.stop());
-});
+})
