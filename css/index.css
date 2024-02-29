@@ -5,6 +5,10 @@
     font-style: normal;
 }
 
+body {
+    font-family: Happiness-Sans-Bold;
+}
+
 .wrap {
     position: absolute;
     width: 1920px;
@@ -112,7 +116,7 @@ div.credit{
     font-family: Happiness-Sans-Bold;
     font-weight:400;
     text-align:right;
-    line-height:26px;
+    line-height:15px;
     word-wrap: break-word
 }
 
