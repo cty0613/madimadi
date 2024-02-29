@@ -31,7 +31,7 @@ body {
     display: inline-block;
     height: 105px;
     width: 445px;
-    margin-left: 48px;
+
 }
 
 .title {
@@ -100,8 +100,7 @@ div.seek-control{
 
 div.reload{
     position:absolute;
-    top:35px;
-    left:40px;
+    top:30px;
     z-index:1;
 }
 
@@ -125,7 +124,6 @@ div.credit{
 }
 
 .gohome {
-    left: 26px; 
     top: 0px; 
     position: absolute;
     text-align: right;
@@ -147,12 +145,14 @@ a {
 
 .banner-wrapper {
     position: absolute;
-    height: 650px;
-    width: 1920px;
+    height: 488px;
+    width: 1728px;
     overflow: hidden;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 .banner-wrapper img {
     position: absolute;
-    height: 632px;
+    height: 480px;
 }
