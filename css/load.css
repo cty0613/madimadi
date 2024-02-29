@@ -1,6 +1,49 @@
+.main-container {
+    position: relative;
+    width: 1920px;
+    margin: 0 auto;
+    font-size: 0px;
+    background: #ffffff;
+  }
+
 .making-desc {
     font-size: 64px;
     height: 96px;
     display: flex;
     justify-content: center;
 }
+
+.ellipse {
+    position: relative;
+    width: 268px;
+    height: 268px;
+    margin: 42px 0 0 826px;
+    background: url(../src/Ellipse.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 1;
+    overflow: visible auto;
+  }
+  .vector {
+    position: relative;
+    width: 141px;
+    height: 149px;
+    margin: 59px 0 0 55px;
+    background: url(../src/Vector.svg)
+      no-repeat center;
+    background-size: 100% 100%;
+    z-index: 3;
+  }
+  .loading-percent {
+    position: absolute;
+    width: 268px;
+    height: 268px;
+    top: 0;
+    left: 50%;
+    background: url()
+      no-repeat center;
+    background-size: cover;
+    transform: translate(-50%, 0);
+    z-index: 2;
+    border-radius: 50%;
+  }
