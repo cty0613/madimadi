@@ -55,7 +55,4 @@ $('.answer button').click((e)=>{
 
 })
 
-$('#view-result').click((e)=>{
-    $(e.currentTarget).after("<p>" + JSON.stringify(ans_data) + " </p>")
-
-})  
+sessionStorage.setItem('answers_data', JSON.stringify(ans_data));
