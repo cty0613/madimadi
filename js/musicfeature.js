@@ -43,7 +43,7 @@ export default function MusicFeature(q1, q2, q3, q4, q5, q6, q7) {
                     break;
                 case 4 :
                     dSel = "Benny_";
-                    BPM = 80;
+                    BPM = 100;
                     break;
             }
             break;
@@ -168,7 +168,7 @@ export default function MusicFeature(q1, q2, q3, q4, q5, q6, q7) {
                     break;
                 case 2 : // Comfort + AG
                     if (q5 == 1 || q5 == 2 || q5 == 4){ // Grv RnB Funk
-                        Instr = "GrvRnBRunk_AG_80"
+                        Instr = "GrvRnBFunk_AG_80"
                         iBPM = 80;
                     } else if (q5 == 3) { // Rock
                         if (BPM >= 110) {
@@ -186,7 +186,7 @@ export default function MusicFeature(q1, q2, q3, q4, q5, q6, q7) {
 
                 case 3 : // Comfort + Keyboard
                     if (q5 == 1 || q5 == 2 || q5 == 4){ // Grv RnB Funk
-                        Instr = "GrvRnBRunk_Keyboard_80"
+                        Instr = "GrvRnBFunk_Keyboard_80"
                         iBPM = 80;
                     } else if (q5 == 3) { // Rock
                         if (BPM >= 110) {
@@ -204,7 +204,7 @@ export default function MusicFeature(q1, q2, q3, q4, q5, q6, q7) {
 
                 case 4 : // Comfort + Vi
                     if (q5 == 1 || q5 == 2 || q5 == 4){ // Grv RnB Funk
-                        Instr = "GrvRnBRunk_Vi_80"
+                        Instr = "GrvRnBFunk_Vi_80"
                         iBPM = 80;
                     } else if (q5 == 3) { // Rock
                         if (BPM >= 110) {
@@ -318,6 +318,15 @@ export default function MusicFeature(q1, q2, q3, q4, q5, q6, q7) {
     const ResultMood = Mood;
     const ResultBass = Instr.split('_')[0] + "_Bass_" + iBPM;
     const ResultInstr = Instr;
+    const ResultDrumAdjBPM = BPM + AdjBPM;
+    const ResultInstrAdjBPM = iBPM + AdjBPM;
 
-    return [ResultDrumset, ResultDrumRefBPM, ResultInstrRefBPM, ResultMood, ResultBass, ResultInstr];
+    return [ResultDrumset, 
+            ResultDrumRefBPM, 
+            ResultInstrRefBPM, 
+            ResultMood, 
+            ResultBass, 
+            ResultInstr, 
+            ResultDrumAdjBPM, 
+            ResultInstrAdjBPM];
 };

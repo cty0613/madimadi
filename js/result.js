@@ -1,6 +1,6 @@
 import MusicFeature from "./musicfeature.js";
 
-
+const CrtCount = 0;
 // Load SessionStorage
 
 var info = sessionStorage.getItem('answers_data');
@@ -27,7 +27,8 @@ console.log(MixedInfo);
 3: "Comfort" (Mood)
 4: "GrvRnBFunk_Bass_80" (Bass)
 5: "GrvRnBFunk_EG_80" (Instr) 
-6:  (BPM Adj Amount)
+6:  (Drum Adjusted BPM)
+7:  (Instr Adjusted BPM)
 */
 
 // Define audio files
@@ -41,8 +42,10 @@ console.log(audioFiles);
 // Initialize players
 const players = [];
 const RefbpmValues = [MixedInfo[1], MixedInfo[2], MixedInfo[2]];
-const AdjbpmValues = [80, 80, 80];
+const AdjbpmValues = [MixedInfo[6], MixedInfo[6], MixedInfo[6]];
 
+console.log(RefbpmValues);
+console.log(AdjbpmValues);
 // Load audio files
 audioFiles.forEach((file, index) => {
     const player = new Tone.Player({
@@ -65,6 +68,7 @@ $('.restart').on('click', function() {
 
 // Mix function
 $('.box').on('click', function() {
+    CreatCount++;
     // Disconnect all players
     players.forEach(player => player.disconnect());
 
@@ -76,7 +80,7 @@ $('.box').on('click', function() {
         player.connect(mixer);
         const bpmRatio = AdjbpmValues[index]/RefbpmValues[index]; // Adjust playback rate based on BPM
         player.playbackRate = bpmRatio;
-        player.volume.value = index === 0 ? 0 : -20 + index * 5; // Adjust volume for each player
+        // player.volume.value = index === 0 ? 0 : -20 + index * 5; // Adjust volume for each player
     });
 
     // Connect mixer to destination
@@ -85,3 +89,5 @@ $('.box').on('click', function() {
     // Start playback
     players.forEach(player => player.start());
 })
+
+$('.explain').text(`${MixedInfo[5]}가 있는 ${MixedInfo[3]}한 ${MixedInfo[0].split("_")[0]} 장르에요 <br /> 음악의 ${CrtCount}번째 마디에요` )

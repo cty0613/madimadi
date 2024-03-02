@@ -45,7 +45,12 @@
       no-repeat center;
     background-size: cover;
     z-index: 9;
+    transition: all 0.2s;
   }
+
+  .pause:hover {
+    opacity: 0.5;
+   }
   .restart {
     position: absolute;
     width: 75px;
@@ -56,6 +61,11 @@
       no-repeat center;
     background-size: cover;
     z-index: 10;
+    transition: all 0.2s;
+  }
+
+  .restart:hover {
+   opacity: 0.5;
   }
   .flex-column-ee {
     position: absolute;
@@ -96,7 +106,7 @@
     text-align: left;
     text-overflow: initial;
     z-index: 4;
-    overflow: hidden;
+    /* overflow: hidden; */
   }
   .jazzy-rock {
     display: flex;
