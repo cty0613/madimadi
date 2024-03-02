@@ -11,9 +11,14 @@
     height: 96px;
     display: flex;
     justify-content: center;
+    font-family: Happiness-Sans-Bold, var(--default-font-family);
+    color: #777777;
+    font-weight: 900;
+    line-height: 96px;
+    word-wrap: break-word
 }
 
-.ellipse {
+/*.ellipse {
     position: relative;
     width: 268px;
     height: 268px;
@@ -23,7 +28,7 @@
     background-size: cover;
     z-index: 1;
     overflow: visible auto;
-  }
+  }*/
   .vector {
     position: relative;
     width: 141px;
@@ -34,7 +39,7 @@
     background-size: 100% 100%;
     z-index: 3;
   }
-  .loading-percent {
+/*  .loading-percent {
     position: absolute;
     width: 268px;
     height: 268px;
@@ -46,4 +51,30 @@
     transform: translate(-50%, 0);
     z-index: 2;
     border-radius: 50%;
+  }*/
+
+
+  .ellipse{
+    height: 268px;
+    width: 268px;
+    border-radius: 50%;
+    border: 23px solid  #D9D9D9;
+    position: relative;
+    top: 3%;
+    left: 42%;
+
+    -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+    -webkit-animation: loader1 3s linear infinite;
+        animation: loader1 3s linear infinite;
+  }
+  
+  @-webkit-keyframes loader1{
+      0%{-webkit-transform:rotate(0deg);}
+      100%{-webkit-transform:rotate(360deg);}
+  }
+  
+  @keyframes loader1{
+      0%{transform:rotate(0deg);}
+      100%{transform:rotate(360deg);}
   }
