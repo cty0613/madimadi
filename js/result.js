@@ -91,4 +91,5 @@ $('.box').on('click', function() {
     players.forEach(player => player.start());
 })
 
-$('.explain').text(`${MixedInfo[5]}가 있는 ${MixedInfo[3]}한 ${MixedInfo[0].split("_")[0]} 장르에요 <br /> 음악의 ${CrtCount}번째 마디에요` )
+$('.explain').text(`${MixedInfo[5]}가 있는 ${MixedInfo[3]}한 ${MixedInfo[0].split("_")[0]} 장르에요.` )
+$('.explain-2').text(`음악의 ${CrtCount}번째 마디에요`);
