@@ -39,7 +39,7 @@ export default function MusicFeature(q1, q2, q3, q4, q5, q6, q7) {
                     break;
                 case 3 :
                     dSel = "Motown_";
-                    BPM = 115;
+                    BPM = 90;
                     break;
                 case 4 :
                     dSel = "Benny_";
@@ -129,7 +129,7 @@ export default function MusicFeature(q1, q2, q3, q4, q5, q6, q7) {
             Mood = 'Cool';
             switch (q7) {
                 case 1 : 
-                    Instr = "All_EG_80";
+                    Instr = "All_AG_80"; // Fix Later
                     iBPM = 80;
                     break;
                 case 2 :
