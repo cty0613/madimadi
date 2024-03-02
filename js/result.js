@@ -1,6 +1,6 @@
 import MusicFeature from "./musicfeature.js";
 
-const CrtCount = 0;
+var CrtCount = 0;
 // Load SessionStorage
 
 var info = sessionStorage.getItem('answers_data');
@@ -68,7 +68,8 @@ $('.restart').on('click', function() {
 
 // Mix function
 $('.box').on('click', function() {
-    CreatCount++;
+    CrtCount++;
+
     // Disconnect all players
     players.forEach(player => player.disconnect());
 
