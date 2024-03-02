@@ -22,7 +22,7 @@ export default function MusicFeature(q1, q2, q3, q4, q5, q6, q7) {
                     break;
                 case 4 :
                     dSel = "CrowdGroove_";
-                    BPM = 80;
+                    BPM = 105;
                     break;
             }
             break;
