@@ -38,12 +38,17 @@ const ans_data = [
         "questionNum": 8,
         "selectedAns": '',
         "selectedStr": ''
+    },
+    {
+        "questionNum": 9,
+        "selectedAns": '',
+        "selectedStr": ''
     }
 ]
 
 var qNum = 1;
 
-$('.answer button').click((e)=>{
+$('.buttonSelect').click((e)=>{
     var questionNum = $(e.currentTarget).attr('id').split('-')[0]
     var selectedNum = ($(e.currentTarget).attr('id').split('-')[2]);
     var selectedText = $(e.currentTarget).html();
@@ -55,10 +60,22 @@ $('.answer button').click((e)=>{
 
 })
 
+$('#nextButton').click((e)=>{
+    ans_data[8].selectedStr = $('.nameInput').val()
+    $('.pn').fadeOut(0);
+    $('.pd').removeClass("invi");
+})
+
+$('#nextButton-D').click((e)=>{
+    $('.pd').fadeOut(0);
+    $('.p1').removeClass("invi");
+})
+
 var newUrl = "../pages/load.html";
 
-$('.finish').click((e)=>{
+$('#finish').click((e)=>{
     sessionStorage.setItem('answers_data', JSON.stringify(ans_data));
     window.location.href = newUrl;
 });
 
+$

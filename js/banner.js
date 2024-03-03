@@ -20,7 +20,7 @@ window.onload = function() {
 
         last = imgCnt;
 
-        setInterval(function() {
+        var Flow = setInterval(function() {
             $img.each(function(){
                 $(this).css("left", $(this).position().left-5); // 1px씩 왼쪽으로 이동
             });
