@@ -18,11 +18,11 @@ export default function MusicFeature(q1, q2, q3, q4, q5, q6, q7) {
                     break;
                 case 3 :
                     dSel = "PopGroove_";
-                    BPM = 115;
+                    BPM = 80;
                     break;
                 case 4 :
                     dSel = "CrowdGroove_";
-                    BPM = 80;
+                    BPM = 105;
                     break;
             }
             break;
@@ -39,7 +39,7 @@ export default function MusicFeature(q1, q2, q3, q4, q5, q6, q7) {
                     break;
                 case 3 :
                     dSel = "Motown_";
-                    BPM = 115;
+                    BPM = 90;
                     break;
                 case 4 :
                     dSel = "Benny_";
@@ -69,26 +69,26 @@ export default function MusicFeature(q1, q2, q3, q4, q5, q6, q7) {
             }
             break;
         case 4 :
-        Category = "Funk_";
-        switch (q6){
-            case 1 :
-                dSel = "SimpleFunk_";
-                BPM = 100;
-                break;
-            case 2 :
-                dSel = "FunkyPop_";
-                BPM = 120;
-                break;
-            case 3 :
-                dSel = "Jesse_";
-                BPM = 95;
-                break;
-            case 4 :
-                dSel = "FunkedOut_";
-                BPM = 105;
-                break;
-        }
-        break;
+            Category = "Funk_";
+            switch (q6){
+                case 1 :
+                    dSel = "SimpleFunk_";
+                    BPM = 100;
+                    break;
+                case 2 :
+                    dSel = "FunkyPop_";
+                    BPM = 120;
+                    break;
+                case 3 :
+                    dSel = "Jesse_";
+                    BPM = 95;
+                    break;
+                case 4 :
+                    dSel = "FunkedOut_";
+                    BPM = 105;
+                    break;
+            }
+            break;
         case 5 :
             Category = "Ballad_";
             BPM = 85;
@@ -129,7 +129,7 @@ export default function MusicFeature(q1, q2, q3, q4, q5, q6, q7) {
             Mood = 'Cool';
             switch (q7) {
                 case 1 : 
-                    Instr = "All_EG_80";
+                    Instr = "All_AG_80"; // Fix Later
                     iBPM = 80;
                     break;
                 case 2 :
@@ -318,8 +318,8 @@ export default function MusicFeature(q1, q2, q3, q4, q5, q6, q7) {
     const ResultMood = Mood;
     const ResultBass = Instr.split('_')[0] + "_Bass_" + iBPM;
     const ResultInstr = Instr;
-    const ResultDrumAdjBPM = BPM + AdjBPM;
-    const ResultInstrAdjBPM = iBPM + AdjBPM;
+    const ResultDrumAdjBPM = BPM + (AdjBPM/2);
+    const ResultInstrAdjBPM = iBPM + (AdjBPM/2);
 
     return [ResultDrumset, 
             ResultDrumRefBPM, 

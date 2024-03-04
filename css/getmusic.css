@@ -1,4 +1,3 @@
-
 @font-face {
     font-family: 'Happiness-Sans-Bold';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/Happiness-Sans-Bold.woff2') format('woff2');
@@ -6,12 +5,18 @@
     font-style: normal;
 }
 
+body {
+    font-family: Happiness-Sans-Bold;
+    font-weight: 500;
+}
 .invi {
     opacity: 0.0;
 }
 
 .wrap{
-    transition:all 0.3s;
+    overflow: hidden;
+    height: 100%;
+    transition: all 0.3s;
 
 }
 
@@ -23,11 +28,28 @@
     margin: 0px;
     font-family: Happiness-Sans-Bold;
     color: #777777;
-    padding-top: 60px;
+    padding-top: 38px;
     padding-bottom: 40px;
     text-align: center;
     font-size: 64px;
     font-weight: 900;
+}
+
+.question-control {
+    position: absolute;
+    left: 733px;
+    top: 90px;
+    font-size: 36px;
+    color: #777777;
+}
+
+.question-indicate, .question-total {
+    text-align: center;
+    display: inline-block;
+    width: 25px;
+    height: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .answer {
@@ -61,40 +83,32 @@
     border: 24;
 }
 
-.answerSub input {
-    margin-right: 24px;
-    margin-bottom: 24px;
+.nameInput {
     width: 852px;
     height: 184px;
-    border-style: solid;
-    border-width: medium;
-    border-color:#8D8D8D;
-    right: 50%;
-    transform: translateX(50%);
-    display: inline-flex;
+    border: #8D8D8D 3px solid;
+    display: inline-table;
+    font-size: 64px;
+    text-align: center;
 }
 
-.answerSub button{
-    background-color: #ffffff;
-    color: #777777;
-    border-color:#8D8D8D;
-    font-family: Happiness-Sans-Bold;
-    border-width: 3px;
-    outline: 0;
-    font-size: 40px;
-    font-weight: 900;
-    margin-top: 40px;
+.nameCon, .userCon {
+    margin-left: 435px;
+}
+
+#nextButton, #nextButton-D, #finish {
     width: 560px;
     height: 120px;
-    right: 50.5%;
-    transform: translateX(50%);
-    transition:  all 0.3s;
-    position:absolute;
-
+   
 }
 
-.answerSub button:hover {
-    background-color: #E3E2E2;
-    box-shadow: 2px 2px 2px;
-    border: 24;
+.nextCon, .finishCon {
+    margin-left: 584px;
+    margin-top: 65px;
+    
 }
+
+.qd h3 {
+    padding: 8px;
+}
+
