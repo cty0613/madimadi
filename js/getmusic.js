@@ -61,6 +61,13 @@ $('.buttonSelect').click((e)=>{
 
 })
 
+$('.left-arrow').click((e)=>{
+    qNum--;
+    $('.p'+qNum).removeClass("invi").fadeIn(50);
+    $('.p'+(qNum+1)).fadeOut(0);
+    $('.question-indicate').text(" "+qNum+" ");
+})
+
 $('#nextButton').click((e)=>{
     ans_data[8].selectedStr = $('.nameInput').val()
     $('.pn').fadeOut(0);
