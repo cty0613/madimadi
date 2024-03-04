@@ -72,6 +72,7 @@ $('#nextButton').click((e)=>{
     ans_data[8].selectedStr = $('.nameInput').val()
     $('.pn').fadeOut(0);
     $('.pd').removeClass("invi");
+    $('.userNameDesc').text(ans_data[8].selectedStr);
 })
 
 $('#nextButton-D').click((e)=>{
