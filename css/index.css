@@ -90,7 +90,7 @@ body {
     display: inline-block;
 }
 
-div.seek-control{
+div.seek-control {
     position:absolute;
     top:10px;
     left:600px;
@@ -99,10 +99,14 @@ div.seek-control{
     text-align:center;
 }
 
-div.reload{
+div.reload {
     position:absolute;
     top:30px;
     z-index:1;
+    transition: all 0.3s;
+}
+div.reload:hover {
+    opacity: 0.5;
 }
 
 div.credit{
@@ -122,6 +126,11 @@ div.credit{
 
 .seek-control img {
     padding: 21px 45px 17px;
+    transition: all 0.2s;
+}
+
+.seek-control img:hover {
+    opacity: 0.5;
 }
 
 .gohome {
