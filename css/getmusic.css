@@ -37,13 +37,19 @@ body {
 
 .question-control {
     position: absolute;
-    left: 748.5px;
+    left: 733px;
     top: 90px;
     font-size: 36px;
+    color: #777777;
 }
 
 .question-indicate, .question-total {
+    text-align: center;
+    display: inline-block;
     width: 25px;
+    height: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .answer {
