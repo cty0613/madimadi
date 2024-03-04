@@ -35,6 +35,17 @@ body {
     font-weight: 900;
 }
 
+.question-control {
+    position: absolute;
+    left: 748.5px;
+    top: 90px;
+    font-size: 36px;
+}
+
+.question-indicate, .question-total {
+    width: 25px;
+}
+
 .answer {
     display: inline-table;
 }
