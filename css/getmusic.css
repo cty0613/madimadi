@@ -37,7 +37,7 @@ body {
 
 .question-control {
     position: absolute;
-    left: 733px;
+    left: 732px;
     top: 90px;
     font-size: 36px;
     color: #777777;
@@ -88,7 +88,9 @@ body {
     height: 184px;
     border: #8D8D8D 3px solid;
     display: inline-table;
-    font-size: 64px;
+    font-family: Happiness-Sans-Bold;
+    font-size: 40px;
+    color: #777777;
     text-align: center;
 }
 
