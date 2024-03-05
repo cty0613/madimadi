@@ -1,6 +1,6 @@
 import MusicFeature from "./musicfeature.js";
 import translate from "./translate.js";
-import GraphicFeature from "./graphic.js";
+import GraphicFeature from "./graphics.js";
 
 var CrtCount = 0;
 // Load SessionStorage
