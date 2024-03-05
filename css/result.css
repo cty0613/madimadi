@@ -157,21 +157,26 @@
   background-color: #E3E2E2;
 }
 
-  .text-1 {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    position: absolute;
-    width: 63.21%;
-    height: 53.33%;
-    top: 19.17%;
-    left: 17.68%;
-    color: #767676;
-    font-family: Happiness Sans VF, var(--default-font-family);
-    font-size: 40px;
-    font-weight: 900;
-    line-height: 64px;
-    text-align: center;
-    white-space: nowrap;
-    z-index: 8;
-  }
+.text-1 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: absolute;
+  width: 63.21%;
+  height: 53.33%;
+  top: 19.17%;
+  left: 17.68%;
+  color: #767676;
+  font-family: Happiness Sans VF, var(--default-font-family);
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 64px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 8;
+}
+
+.graphic-wrap {
+  position: absolute;
+  
+}
