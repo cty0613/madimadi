@@ -27,7 +27,7 @@ window.onload = function() {
             });
             $first = $("#banner"+first);
             $last = $("#banner"+last);
-            if($first.position().left < -1000) {    // 제일 앞에 배너 제일 뒤로 옮김
+            if($first.position().left < -2000) {    // 제일 앞에 배너 제일 뒤로 옮김
                 $first.css("left", $last.position().left + $last.width()-1 );
                 first++;
                 last++;

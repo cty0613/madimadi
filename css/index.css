@@ -166,3 +166,13 @@ a {
     position: absolute;
     height: 480px;
 }
+
+.play-line {
+    position: absolute;
+    top: 270px;
+    height: 480px;
+    z-index: 9999;
+    left: 942.5px;
+    color: #d9d9d9;
+    opacity: 0.7;
+}
