@@ -91,6 +91,7 @@ export default function MusicFeature(q1, q2, q3, q4, q5, q6, q7) {
             break;
         case 5 :
             Category = "Ballad_";
+            dSel = ""
             BPM = 85;
             break;
     }
@@ -108,7 +109,6 @@ export default function MusicFeature(q1, q2, q3, q4, q5, q6, q7) {
             AdjBPM = AdjBPM + 8;
             break;
     }
-
     switch (q4){ // BPM Adjust
         case 1 :
             AdjBPM = AdjBPM + 8;
@@ -123,7 +123,6 @@ export default function MusicFeature(q1, q2, q3, q4, q5, q6, q7) {
             AdjBPM = AdjBPM - 4;
             break;
     }
-    
     switch (q2){ // Mood & Instr
         case 1 :
             Mood = 'Cool';

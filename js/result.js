@@ -1,4 +1,5 @@
 import MusicFeature from "./musicfeature.js";
+import GraphicFeature from "./graphic.js";
 
 var CrtCount = 0;
 // Load SessionStorage
