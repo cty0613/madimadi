@@ -33,17 +33,33 @@ console.log(MixedInfo);
 */
 
 // Define audio files
-const audioFiles = [
-    '../src/au/Drum/'+ MixedInfo[0]+'.mp3', // Drum
-    '../src/au/'+ MixedInfo[3]+'/' + MixedInfo[4] +'.mp3', // Bass
-    '../src/au/'+ MixedInfo[3]+'/' + MixedInfo[5] +'.mp3', // Selected Instr.
-  ];
 
-console.log(audioFiles);
-// Initialize players
-const players = [];
-const RefbpmValues = [MixedInfo[1], MixedInfo[2], MixedInfo[2]];
-const AdjbpmValues = [MixedInfo[6], MixedInfo[6], MixedInfo[6]];
+if (!MixedInfo[8]){ // case of Not Ballad
+    var audioFiles = [
+        '../src/au/Drum/'+ MixedInfo[0]+'.mp3', // Drum
+        '../src/au/'+ MixedInfo[3]+'/' + MixedInfo[4] +'.mp3', // Bass
+        '../src/au/'+ MixedInfo[3]+'/' + MixedInfo[5] +'.mp3', // Selected Instr.
+      ];
+    
+    console.log(audioFiles);
+    // Initialize players
+    var players = [];
+    var RefbpmValues = [MixedInfo[1], MixedInfo[2], MixedInfo[2]];
+    var AdjbpmValues = [MixedInfo[6], MixedInfo[6], MixedInfo[6]];
+
+} else { // case of Ballad
+    var audioFiles = [
+        '../src/au/'+ MixedInfo[3]+'/' + MixedInfo[4] +'.mp3', // Bass
+        '../src/au/'+ MixedInfo[3]+'/' + MixedInfo[5] +'.mp3', // Selected Instr.
+      ];
+    
+    console.log(audioFiles);
+    // Initialize players
+    var players = [];
+    var RefbpmValues = [MixedInfo[2], MixedInfo[2]];
+    var AdjbpmValues = [MixedInfo[6], MixedInfo[6]];
+}
+
 
 console.log(RefbpmValues);
 console.log(AdjbpmValues);

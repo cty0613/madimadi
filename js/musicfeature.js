@@ -24,6 +24,11 @@ export default function MusicFeature(q1, q2, q3, q4, q5, q6, q7) {
                     dSel = "CrowdGroove_";
                     BPM = 105;
                     break;
+                case 5 :
+                    Category = "Ballad_";
+                    dSel = ""
+                    BPM = 85;
+                    break;
             }
             break;
         case 2 :
@@ -44,6 +49,11 @@ export default function MusicFeature(q1, q2, q3, q4, q5, q6, q7) {
                 case 4 :
                     dSel = "Benny_";
                     BPM = 100;
+                    break;
+                case 5 :
+                    Category = "Ballad_";
+                    dSel = ""
+                    BPM = 85;
                     break;
             }
             break;
@@ -66,6 +76,11 @@ export default function MusicFeature(q1, q2, q3, q4, q5, q6, q7) {
                     dSel = "BigRoom_";
                     BPM = 86;
                     break;
+                case 5 :
+                    Category = "Ballad_";
+                    dSel = ""
+                    BPM = 85;
+                    break;
             }
             break;
         case 4 :
@@ -86,6 +101,11 @@ export default function MusicFeature(q1, q2, q3, q4, q5, q6, q7) {
                 case 4 :
                     dSel = "FunkedOut_";
                     BPM = 105;
+                    break;
+                case 5 :
+                    Category = "Ballad_";
+                    dSel = ""
+                    BPM = 85;
                     break;
             }
             break;
@@ -310,7 +330,7 @@ export default function MusicFeature(q1, q2, q3, q4, q5, q6, q7) {
             break;
     }
 
-
+    
     const ResultDrumset = Category + dSel + BPM;
     const ResultDrumRefBPM = BPM;
     const ResultInstrRefBPM = iBPM;
@@ -319,6 +339,11 @@ export default function MusicFeature(q1, q2, q3, q4, q5, q6, q7) {
     const ResultInstr = Instr;
     const ResultDrumAdjBPM = BPM + (AdjBPM/2);
     const ResultInstrAdjBPM = iBPM + (AdjBPM/2);
+    var IsBallad = 0;
+    if( ResultDrumset == 'Ballad_85'){
+        IsBallad = 1;
+    }
+
 
     return [ResultDrumset, 
             ResultDrumRefBPM, 
@@ -327,5 +352,7 @@ export default function MusicFeature(q1, q2, q3, q4, q5, q6, q7) {
             ResultBass, 
             ResultInstr, 
             ResultDrumAdjBPM, 
-            ResultInstrAdjBPM];
+            ResultInstrAdjBPM,
+            IsBallad
+            ];
 };
