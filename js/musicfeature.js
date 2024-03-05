@@ -318,8 +318,8 @@ export default function MusicFeature(q1, q2, q3, q4, q5, q6, q7) {
     const ResultMood = Mood;
     const ResultBass = Instr.split('_')[0] + "_Bass_" + iBPM;
     const ResultInstr = Instr;
-    const ResultDrumAdjBPM = BPM + AdjBPM;
-    const ResultInstrAdjBPM = iBPM + AdjBPM;
+    const ResultDrumAdjBPM = BPM + (AdjBPM/2);
+    const ResultInstrAdjBPM = iBPM + (AdjBPM/2);
 
     return [ResultDrumset, 
             ResultDrumRefBPM, 
