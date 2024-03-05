@@ -1,4 +1,5 @@
 import MusicFeature from "./musicfeature.js";
+import translate from "./translate.js";
 import GraphicFeature from "./graphic.js";
 
 var CrtCount = 0;
@@ -108,5 +109,6 @@ $('.box').on('click', function() {
     players.forEach(player => player.start());
 })
 
-$('.explain').text(`${MixedInfo[5]}가 있는 ${MixedInfo[3]}한 ${MixedInfo[0].split("_")[0]} 장르에요.` )
+translate(parseInt(parsedInfo[1].selectedAns), parseInt(parsedInfo[4].selectedAns), parseInt(parsedInfo[6].selectedAns))
+
 $('.explain-2').text(`음악의 ${CrtCount}번째 마디에요`);
