@@ -65,23 +65,23 @@ export default function GraphicFeature(bpm, q5_genre, q6_dsel, q2_chord, q8_melo
             switch(q5_genre){ // with genre
                 case 1: // grv
                     chord = 'area_chord_drousy_grv';
-                    melody = 'area_chord_drousy_notrock';
+                    melody = 'area_melody_drousy_notrock';
                     break;
                 case 2: // rnb
                     chord = 'area_chord_drousy_rnb';
-                    melody = 'area_chord_drousy_notrock';
+                    melody = 'area_melody_drousy_notrock';
                     break;
                 case 3: // rock
                     chord = 'area_chord_drousy_rock';
-                    melody = 'area_chord_drousy_rock';
+                    melody = 'area_melody_drousy_rock';
                     break;
                 case 4: // funk
                     chord = 'area_chord_drousy_funk';
-                    melody = 'area_chord_drousy_notrock';
+                    melody = 'area_melody_drousy_notrock';
                     break;
                 case 5: // ballad
                     chord = 'area_chord_drousy_ballad';
-                    melody = 'area_chord_drousy_ballad';
+                    melody = 'area_melody_drousy_ballad';
                     break;
             }
             break;
@@ -89,23 +89,23 @@ export default function GraphicFeature(bpm, q5_genre, q6_dsel, q2_chord, q8_melo
             switch(q5_genre){ // with genre
                 case 1: // grv
                     chord = 'area_chord_drousy_grv';
-                    melody = 'area_chord_drousy_notrock';
+                    melody = 'area_melody_drousy_notrock';
                     break;
                 case 2: // rnb
                     chord = 'area_chord_drousy_rnb';
-                    melody = 'area_chord_drousy_notrock';
+                    melody = 'area_melody_drousy_notrock';
                     break;
                 case 3: // rock
                     chord = 'area_chord_drousy_rock';
-                    melody = 'area_chord_drousy_rock';
+                    melody = 'area_melody_drousy_rock';
                     break;
                 case 4: // funk
                     chord = 'area_chord_drousy_funk';
-                    melody = 'area_chord_drousy_notrock';
+                    melody = 'area_melody_drousy_notrock';
                     break;
                 case 5: // ballad
                     chord = 'area_chord_drousy_ballad';
-                    melody = 'area_chord_drousy_ballad';
+                    melody = 'area_melody_drousy_ballad';
                     break;
             }
             break;

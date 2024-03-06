@@ -116,3 +116,19 @@ $('.explain-2').text(`음악의 ${CrtCount}번째 마디에요`);
 
 // Graphics Function
 
+var graphicInfo = GraphicFeature(
+    MixedInfo[6], // bpm
+    parseInt(parsedInfo[4].selectedAns), //q5_genre
+    parseInt(parsedInfo[5].selectedAns), //q6_dsel
+    parseInt(parsedInfo[1].selectedAns), //q2_chord
+    parseInt(parsedInfo[6].selectedAns), //q8_melody
+    parseInt(parsedInfo[6].selectedAns));//q7_instr
+
+console.log(graphicInfo);
+
+$('.graphic-instr').css('background-image', `url(${graphicInfo[0]})`);
+$('.graphic-chord').css('background-image', `url(${graphicInfo[1]})`);
+$('.graphic-drumset').css('background-image', `url(${graphicInfo[2]})`);
+$('.graphic-melody').css('background-image', `url(${graphicInfo[3]})`);
+
+
