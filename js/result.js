@@ -1,6 +1,7 @@
 import MusicFeature from "./musicfeature.js";
 import translate from "./translate.js";
 import GraphicFeature from "./graphics.js";
+import ColorFeature from "./colors.js";
 
 // Load LocalStorage
 
@@ -116,7 +117,7 @@ $('.explain-2').text(`음악의 ${CrtCount}번째 마디에요`);
 
 // Graphics Function
 
-var graphicInfo = GraphicFeature(
+/*var graphicInfo = GraphicFeature(
     MixedInfo[6], // bpm
     parseInt(parsedInfo[4].selectedAns), //q5_genre
     parseInt(parsedInfo[5].selectedAns), //q6_dsel
@@ -125,10 +126,19 @@ var graphicInfo = GraphicFeature(
     parseInt(parsedInfo[6].selectedAns));//q7_instr
 
 console.log(graphicInfo);
+*/
 
-$('.graphic-instr').css('background-image', `url(${graphicInfo[0]})`);
-$('.graphic-chord').css('background-image', `url(${graphicInfo[1]})`);
-$('.graphic-drumset').css('background-image', `url(${graphicInfo[2]})`);
-$('.graphic-melody').css('background-image', `url(${graphicInfo[3]})`);
+var colorInfo = ColorFeature(
+    parseInt(parsedInfo[4].selectedAns)
+);
+
+console.log(colorInfo);
+
+$('.graphic-lines').css('background-image', `url(${colorInfo[0]})`);
+$('.graphic-instr').css('background-image', `url(${colorInfo[1]})`);
+$('.graphic-chord').css('background-image', `url(${colorInfo[2]})`);
+$('.graphic-drumset').css('background-image', `url(${colorInfo[3]})`);
+$('.graphic-melody').css('background-image', `url(${colorInfo[4]})`);
+
 
 
