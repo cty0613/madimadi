@@ -30,11 +30,11 @@ export default function translate(q2, q5, q7) {
         break;
     case 3 :
         buttonset = "2-sel-3";
-        mood_n = "사뿐사뿐";
+        mood_n = "퐁실퐁실";
         break;
     case 4 :
         buttonset = "2-sel-4";
-        mood_n = "노곤노곤";
+        mood_n = "소록소록";
         break;
     }
     switch (q5){ // 장르
