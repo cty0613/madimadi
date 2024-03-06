@@ -189,6 +189,12 @@
   height: 100%;
 }
 
+
+.graphic-lines {
+  z-index: 4;
+  background-image: url('../src/graphics/area_chord_lines.png');
+  
+}
 .graphic-instr {
   z-index: 5;
   background-image: url('../src/graphics/area_instr_ag_1.png');
