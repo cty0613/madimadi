@@ -2,6 +2,8 @@ import MusicFeature from "./musicfeature.js";
 import translate from "./translate.js";
 import GraphicFeature from "./graphics.js";
 
+// Load LocalStorage
+
 var CrtCount = 0;
 // Load SessionStorage
 
@@ -110,5 +112,7 @@ $('.box').on('click', function() {
 })
 
 translate(parseInt(parsedInfo[1].selectedAns), parseInt(parsedInfo[4].selectedAns), parseInt(parsedInfo[6].selectedAns))
-
 $('.explain-2').text(`음악의 ${CrtCount}번째 마디에요`);
+
+// Graphics Function
+

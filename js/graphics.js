@@ -126,4 +126,13 @@ export default function GraphicFeature(bpm, q5_genre, q6_dsel, q2_chord, q8_melo
             break;
     }
     
+    var ResultInstrDir = '../src/graphics/' + instr + '.png';
+    var ResultChordDir = '../src/graphics/' + chord + '.png';
+    var ResultDrumsetDir = '../src/graphics/' + drumset + '.png';
+    var ResultMelodyDir = '../src/graphics/' + melody + '.png';
+
+    return [ResultInstrDir,
+            ResultChordDir,
+            ResultDrumsetDir,
+            ResultMelodyDir]
 }
