@@ -2,8 +2,7 @@ import GraphicFeature from "./graphics.js";
 export default function ColorFeature(q5) {
     var info = sessionStorage.getItem('answers_data');
     var parsedInfo = JSON.parse(info);
-    
-    console.log(parsedInfo);
+
 
     var graphicInfo = GraphicFeature(
         100, // bpm

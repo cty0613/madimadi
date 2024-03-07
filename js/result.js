@@ -11,6 +11,7 @@ var CrtCount = localStorage.getItem('CreateCounter');
 var info = sessionStorage.getItem('answers_data');
 var parsedInfo = JSON.parse(info);
 
+console.log("--- Debug : parsedInfo ---")
 console.log(parsedInfo);
 
 // Execute MusicFeature
@@ -23,6 +24,7 @@ var MixedInfo = MusicFeature(
             parseInt(parsedInfo[5].selectedAns),
             parseInt(parsedInfo[6].selectedAns));
 
+console.log("--- Debug : MixedInfo ---");
 console.log(MixedInfo);
 
 /*
@@ -131,7 +133,9 @@ var colorInfo = ColorFeature(
     parseInt(parsedInfo[4].selectedAns)
 );
 
+console.log("--- Debug : graphicInfo ---");
 console.log(graphicInfo);
+console.log("--- Debug : colorInfo ---");
 console.log(colorInfo);
 
 
@@ -155,6 +159,3 @@ $('.graphic-drumset').css({
 $('.graphic-melody').css({
     'filter'         : `${colorInfo[4]}`
 });
-
-
-

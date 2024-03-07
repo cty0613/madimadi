@@ -130,9 +130,11 @@ export default function GraphicFeature(bpm, q5_genre, q6_dsel, q2_chord, q8_melo
     var ResultChordDir = '../src/graphics/' + chord + '.png';
     var ResultDrumsetDir = '../src/graphics/' + drumset + '.png';
     var ResultMelodyDir = '../src/graphics/' + melody + '.png';
+    var ResultWidth = 320000/bpm;
 
     return [ResultInstrDir,
             ResultChordDir,
             ResultDrumsetDir,
-            ResultMelodyDir]
+            ResultMelodyDir,
+            ResultWidth]
 }
