@@ -191,30 +191,25 @@
 
 
 .graphic-lines {
-  z-index: 4;
-  background-image: url('../src/graphics/area_chord_lines.png');
+  z-index: 4
   
 }
 .graphic-instr {
   z-index: 5;
-  background-image: url('../src/graphics/area_instr_ag_1.png');
 
 }
 
 .graphic-chord {
   z-index: 6;
-  background-image: url('../src/graphics/area_chord_comfort_rnb.png');
 }
 
 .graphic-drumset {
   z-index: 7;
-  background-image: url('../src/graphics/area_drumset_1.png');
 
 }
 
 .graphic-melody {
   z-index: 8;
-  background-image: url('../src/graphics/area_melody_comfort_notrock.png');
 
 }
 

@@ -66,8 +66,9 @@ if (!MixedInfo[8]){ // case of Not Ballad
     var AdjbpmValues = [MixedInfo[6], MixedInfo[6]];
 }
 
-
+console.log('--- Debug : RefbpmValues ---');
 console.log(RefbpmValues);
+console.log('--- Debug : AdjbpmValues ---');
 console.log(AdjbpmValues);
 // Load audio files
 audioFiles.forEach((file, index) => {
@@ -139,23 +140,23 @@ console.log("--- Debug : colorInfo ---");
 console.log(colorInfo);
 
 
-$('.graphic-instr').css('background-image', `url(${graphicInfo[0]})`);
-$('.graphic-chord').css('background-image', `url(${graphicInfo[1]})`);
-$('.graphic-drumset').css('background-image', `url(${graphicInfo[2]})`);
-$('.graphic-melody').css('background-image', `url(${graphicInfo[3]})`);
+$('.graphic-instr').attr('src', graphicInfo[0]);
+$('.graphic-chord').attr('src', graphicInfo[1]);
+$('.graphic-drumset').attr('src', graphicInfo[2]);
+$('.graphic-melody').attr('src', graphicInfo[3]);
 
-$('.graphic-lines').css({
-    'filter'         : `${colorInfo[0]}`
+$('.graphic-lines').attr({
+    'fill'         : `${colorInfo[0]}`
 });
-$('.graphic-instr').css({
-    'filter'         : `${colorInfo[1]}`
+$('.graphic-instr').attr({
+    'fill'         : `${colorInfo[1]}`
 });
-$('.graphic-chord').css({
-    'filter'         : `${colorInfo[2]}`
+$('.graphic-chord').attr({
+    'fill'         : `${colorInfo[2]}`
 });
-$('.graphic-drumset').css({
-    'filter'         : `${colorInfo[3]}`
+$('.graphic-drumset').attr({
+    'fill'         : `${colorInfo[3]}`
 });
-$('.graphic-melody').css({
-    'filter'         : `${colorInfo[4]}`
+$('.graphic-melody').attr({
+    'fill'         : `${colorInfo[4]}`
 });
