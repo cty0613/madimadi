@@ -128,17 +128,41 @@ $('.explain-2').text(`음악의 ${CrtCount}번째 마디에요`);
 console.log(graphicInfo);
 */
 
+var graphicInfo = GraphicFeature(
+    100, // bpm
+    parseInt(parsedInfo[4].selectedAns), //q5_genre
+    parseInt(parsedInfo[5].selectedAns), //q6_dsel
+    parseInt(parsedInfo[1].selectedAns), //q2_chord
+    parseInt(parsedInfo[6].selectedAns), //q8_melody
+    parseInt(parsedInfo[6].selectedAns));//q7_instr
+
 var colorInfo = ColorFeature(
     parseInt(parsedInfo[4].selectedAns)
 );
 
 console.log(colorInfo);
 
-$('.graphic-lines').css('background-image', `url(${colorInfo[0]})`);
-$('.graphic-instr').css('background-image', `url(${colorInfo[1]})`);
-$('.graphic-chord').css('background-image', `url(${colorInfo[2]})`);
-$('.graphic-drumset').css('background-image', `url(${colorInfo[3]})`);
-$('.graphic-melody').css('background-image', `url(${colorInfo[4]})`);
+
+$('.graphic-instr').css('background-image', `url(${graphicInfo[0]})`);
+$('.graphic-chord').css('background-image', `url(${graphicInfo[1]})`);
+$('.graphic-drumset').css('background-image', `url(${graphicInfo[2]})`);
+$('.graphic-melody').css('background-image', `url(${graphicInfo[3]})`);
+
+$('.graphic-lines').css({
+    'filter'         : `${colorInfo[0]}`
+});
+$('.graphic-instr').css({
+    'filter'         : `${colorInfo[1]}`
+});
+$('.graphic-chord').css({
+    'filter'         : `${colorInfo[2]}`
+});
+$('.graphic-drumset').css({
+    'filter'         : `${colorInfo[3]}`
+});
+$('.graphic-melody').css({
+    'filter'         : `${colorInfo[4]}`
+});
 
 
 
