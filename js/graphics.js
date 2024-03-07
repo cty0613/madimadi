@@ -1,5 +1,5 @@
 export default function GraphicFeature(bpm, q5_genre, q6_dsel, q2_chord, q8_melody, q7_instr){
-    var width, instr, chord, drumset, melody;
+    var instr, chord, drumset, melody;
 
     switch(q7_instr){ // instr :: pattern
         case 1:

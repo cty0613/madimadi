@@ -1,18 +1,16 @@
 import GraphicFeature from "./graphics.js";
 export default function ColorFeature(q5) {
-    var info = sessionStorage.getItem('answers_data');
-    var parsedInfo = JSON.parse(info);
+    // var info = sessionStorage.getItem('answers_data');
+    // var parsedInfo = JSON.parse(info);
 
 
-    var graphicInfo = GraphicFeature(
-        100, // bpm
-        parseInt(parsedInfo[4].selectedAns), //q5_genre
-        parseInt(parsedInfo[5].selectedAns), //q6_dsel
-        parseInt(parsedInfo[1].selectedAns), //q2_chord
-        parseInt(parsedInfo[6].selectedAns), //q8_melody
-        parseInt(parsedInfo[6].selectedAns));//q7_instr
-    
-    console.log(graphicInfo);
+    // var graphicInfo = GraphicFeature(
+    //     100, // bpm
+    //     parseInt(parsedInfo[4].selectedAns), //q5_genre
+    //     parseInt(parsedInfo[5].selectedAns), //q6_dsel
+    //     parseInt(parsedInfo[1].selectedAns), //q2_chord
+    //     parseInt(parsedInfo[6].selectedAns), //q8_melody
+    //     parseInt(parsedInfo[6].selectedAns));//q7_instr
 
     var g_chord_style_filter, g_instr_style_filter, g_lines_style_filter, g_drumset_style_filter, g_melody_style_filter
     // var g_lines = '../src/graphics/area_chord_lines.png';
