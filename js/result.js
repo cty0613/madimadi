@@ -118,16 +118,6 @@ $('.explain-2').text(`음악의 ${CrtCount}번째 마디에요`);
 
 // Graphics Function
 
-/*var graphicInfo = GraphicFeature(
-    MixedInfo[6], // bpm
-    parseInt(parsedInfo[4].selectedAns), //q5_genre
-    parseInt(parsedInfo[5].selectedAns), //q6_dsel
-    parseInt(parsedInfo[1].selectedAns), //q2_chord
-    parseInt(parsedInfo[6].selectedAns), //q8_melody
-    parseInt(parsedInfo[6].selectedAns));//q7_instr
-
-console.log(graphicInfo);
-*/
 
 var graphicInfo = GraphicFeature(
     100, // bpm
@@ -141,6 +131,7 @@ var colorInfo = ColorFeature(
     parseInt(parsedInfo[4].selectedAns)
 );
 
+console.log(graphicInfo);
 console.log(colorInfo);
 
 
