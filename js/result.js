@@ -5,7 +5,7 @@ import ColorFeature from "./colors.js";
 
 // Load LocalStorage
 
-var CrtCount = 0;
+var CrtCount = localStorage.getItem('CreateCounter');
 // Load SessionStorage
 
 var info = sessionStorage.getItem('answers_data');
@@ -90,6 +90,7 @@ $('.restart').on('click', function() {
 // Mix function
 $('.box').on('click', function() {
     CrtCount++;
+    localStorage.setItem('CreateCounter', CrtCount);
 
     // Disconnect all players
     players.forEach(player => player.disconnect());
