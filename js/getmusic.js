@@ -85,6 +85,11 @@ $('#nextButton-D').click((e)=>{
 var newUrl = "../pages/load.html";
 
 $('#finish').click((e)=>{
+    for ( i=0; i<7; i++){
+        if (ans_data[i].selectedAns == '') { 
+            window.alert(`답하지 않은 질문이 있습니다 : ${i+1} 번`); 
+        }
+    }
     sessionStorage.setItem('answers_data', JSON.stringify(ans_data));
     window.location.href = newUrl;
 });
