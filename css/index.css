@@ -45,7 +45,7 @@ body {
 .description-para {
     color: #777777;
     font-size:16px;
-    font-family: Happiness-Sans-Bold;
+    font-family: Happiness-Sans;
     font-weight:400;
     text-align:left;
     line-height:26px;
@@ -111,13 +111,13 @@ div.reload:hover {
 
 div.credit{
     position:absolute;
-    top:9px;
+    top:15px;
     left:1370px;
     z-index:1;
 
     color: #777777;
     font-size:16px;
-    font-family: Happiness-Sans-Bold;
+    font-family: Happiness-Sans-regular;
     font-weight:400;
     text-align:right;
     line-height:15px;

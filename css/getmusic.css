@@ -29,7 +29,7 @@ body {
     font-family: Happiness-Sans-Bold;
     color: #777777;
     padding-top: 38px;
-    padding-bottom: 40px;
+    padding-bottom: 60px;
     text-align: center;
     font-size: 64px;
     font-weight: 900;
@@ -71,7 +71,7 @@ body {
     font-size: 40px;
     font-weight: 900;
     margin-right: 24px;
-    margin-bottom: 24px;
+    margin-bottom: 24px; 
     width: 560px;
     height: 185px;
     transition:  all 0.3s;
@@ -89,7 +89,7 @@ body {
     border: #8D8D8D 3px solid;
     display: inline-table;
     font-family: Happiness-Sans-Bold;
-    font-size: 52px;
+    font-size: 60px;
     color: #777777;
     text-align: center;
 }
