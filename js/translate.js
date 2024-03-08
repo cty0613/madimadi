@@ -21,21 +21,21 @@ export default function translate(q2, q5, q7) {
     }
     switch (q2){ // 분위기
         case 1 : 
-        buttonset = "2-sel-1";
-        mood_n = "반짝반짝";
+            buttonset = "2-sel-1";
+            mood_n = "반짝반짝";
         break;
-    case 2 : 
-        buttonset = "2-sel-2";
-        mood_n = "몰랑몰랑";
-        break;
-    case 3 :
-        buttonset = "2-sel-3";
-        mood_n = "퐁실퐁실";
-        break;
-    case 4 :
-        buttonset = "2-sel-4";
-        mood_n = "소록소록";
-        break;
+        case 2 : 
+            buttonset = "2-sel-2";
+            mood_n = "몰랑몰랑";
+            break;
+        case 3 :
+            buttonset = "2-sel-3";
+            mood_n = "퐁실퐁실";
+            break;
+        case 4 :
+            buttonset = "2-sel-4";
+            mood_n = "소록소록";
+            break;
     }
     switch (q5){ // 장르
         case 1 : 
