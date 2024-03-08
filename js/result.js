@@ -136,27 +136,50 @@ var colorInfo = ColorFeature(
 
 console.log("--- Debug : graphicInfo ---");
 console.log(graphicInfo);
+
 console.log("--- Debug : colorInfo ---");
 console.log(colorInfo);
 
 
-$('.graphic-instr').attr('src', graphicInfo[0]);
-$('.graphic-chord').attr('src', graphicInfo[1]);
-$('.graphic-drumset').attr('src', graphicInfo[2]);
-$('.graphic-melody').attr('src', graphicInfo[3]);
+$('.graphic-instr').attr('data', graphicInfo[0]);
+$('.graphic-chord').attr('data', graphicInfo[1]);
+$('.graphic-drumset').attr('data', graphicInfo[2]);
+$('.graphic-melody').attr('data', graphicInfo[3]);
 
-$('.graphic-lines').attr({
-    'fill'         : `${colorInfo[0]}`
+d3.xml("../src/graphics/area_chord_lines.svg").then(function(xml){
+    document.getElementById("graphic-lines").appendChild(xml.documentElement);
+    d3.selectAll('#graphic-lines circle, #graphic-lines path, #graphic-lines rect, #graphic-lines ellipse, #graphic-linse line').style('fill', colorInfo[0]); // Change fill color to user input color
+    d3.selectAll('#graphic-lines line').style('stroke', colorInfo[0]); // Change fill color to user input color
+
 });
-$('.graphic-instr').attr({
-    'fill'         : `${colorInfo[1]}`
+
+d3.xml(graphicInfo[0]).then(function(xml) {
+    document.getElementById("graphic-instr").appendChild(xml.documentElement);
+    d3.selectAll('#graphic-instr circle, #graphic-instr path, #graphic-instr rect, #graphic-instr ellipse, #graphic-instr line').style('fill', colorInfo[1]); // Change fill color to user input color
+    d3.selectAll('#graphic-instr path').style('stroke', colorInfo[1]); // Change fill color to user input color
+
 });
-$('.graphic-chord').attr({
-    'fill'         : `${colorInfo[2]}`
+
+d3.xml(graphicInfo[1]).then(function(xml) {
+    document.getElementById("graphic-chord").appendChild(xml.documentElement);
+    d3.selectAll('#graphic-chord circle, #graphic-chord rect, #graphic-chord ellipse, #graphic-chord line').style('fill', colorInfo[2]); // Change fill color to user input color
+    d3.selectAll('#graphic-chord path').style('stroke', colorInfo[2]);
 });
-$('.graphic-drumset').attr({
-    'fill'         : `${colorInfo[3]}`
+
+d3.xml(graphicInfo[2]).then(function(xml) {
+    document.getElementById("graphic-drumset").appendChild(xml.documentElement);
+    d3.selectAll('#graphic-drumset circle, #graphic-drumset path, #graphic-drumset rect, #graphic-drumset ellipse, #graphic-drumset line').style('fill', colorInfo[3]); // Change fill color to user input color
+    d3.selectAll('#graphic-drumset path').style('stroke', colorInfo[3]);
 });
-$('.graphic-melody').attr({
-    'fill'         : `${colorInfo[4]}`
+
+d3.xml(graphicInfo[3]).then(function(xml) {
+    document.getElementById("graphic-melody").appendChild(xml.documentElement);
+    d3.selectAll('#graphic-melody circle, #graphic-melody path, #graphic-melody rect, #graphic-melody ellipse, #graphic-melody line').style('fill', colorInfo[4]); // Change fill color to user input color
+    d3.selectAll('#graphic-drumset path').style('stroke', colorInfo[4]);
 });
+
+// $('.graphic-lines').css('fill', colorInfo[0])
+// $('.graphic-instr').css('fill', colorInfo[1])
+// $('.graphic-chord').css('fill', colorInfo[2]);
+// $('.graphic-drumset').css('fill', colorInfo[3])
+// $('.graphic-melody').css('fill',colorInfo[4]);

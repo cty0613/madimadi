@@ -189,6 +189,12 @@
   height: 100%;
 }
 
+.graphic-over svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
 
 .graphic-lines {
   z-index: 4
@@ -196,7 +202,6 @@
 }
 .graphic-instr {
   z-index: 5;
-
 }
 
 .graphic-chord {
