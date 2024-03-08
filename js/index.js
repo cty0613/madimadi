@@ -1,7 +1,32 @@
-$('.goArchieve').click((e)=>{
-    window.alert('해당 기능은 전시기간이 종료 후 사용가능합니다.')
-});
+
+// CLICKS
 
 $('.svg-refresh').click((e)=>{
     window.location.href = './index.html';
+});
+
+
+// Tone.js
+
+
+// the player
+const player = new Tone.Player({
+    url: "./src/madi_x/Result_02.mp3",
+    loop: false,
+    autostart: true,
+}).toDestination();
+
+// bind the interface
+
+var IsStop = 0;
+
+$('.svg-pause').click((e)=>{
+    if(!IsStop){
+        player.stop();
+        IsStop = 1;
+
+    } else {
+        player.start();
+        IsStop = 0;
+    };
 });
