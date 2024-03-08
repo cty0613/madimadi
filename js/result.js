@@ -86,8 +86,7 @@ $('.pause').on('click', function() {
 });
 
 $('.restart').on('click', function() {
-    var newUrl = "../index.html";
-    window.location.href = newUrl;
+    window.location.href = "../index.html";
 });
 
 // Mix function
@@ -141,10 +140,10 @@ console.log("--- Debug : colorInfo ---");
 console.log(colorInfo);
 
 
-$('.graphic-instr').attr('data', graphicInfo[0]);
-$('.graphic-chord').attr('data', graphicInfo[1]);
-$('.graphic-drumset').attr('data', graphicInfo[2]);
-$('.graphic-melody').attr('data', graphicInfo[3]);
+// $('.graphic-instr').attr('data', graphicInfo[0]);
+// $('.graphic-chord').attr('data', graphicInfo[1]);
+// $('.graphic-drumset').attr('data', graphicInfo[2]);
+// $('.graphic-melody').attr('data', graphicInfo[3]);
 
 d3.xml("../src/graphics/area_chord_lines.svg").then(function(xml){
     document.getElementById("graphic-lines").appendChild(xml.documentElement);
