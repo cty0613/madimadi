@@ -60,5 +60,5 @@ export default function translate(q2, q5, q7) {
         break;
     }
 
-$('.explain').html(`${instr_n} 있는 <br> ${mood_n}한 ${genre} 장르에요.` )
+$('.explain').html(`${instr_n} 있는 <br> ${mood_n}한 ${genre} 장르에요` )
 }
