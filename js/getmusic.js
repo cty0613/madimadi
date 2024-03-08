@@ -70,9 +70,15 @@ $('.left-arrow').click((e)=>{
 
 $('.right-arrow').click((e)=>{
     qNum++;
-    $('.p'+(qNum)).removeClass("invi").fadeIn(50);
-    $('.p'+(qNum-1)).fadeOut(0);
-    $('.question-indicate').text(" "+qNum+" ");
+    if(ans_data[qNum].selectedAns == ''){
+        window.alert(`선택지를 선택하고 넘어가주세요`);
+        qNum--;
+    } else {
+        $('.p'+(qNum)).removeClass("invi").fadeIn(50);
+        $('.p'+(qNum-1)).fadeOut(0);
+        $('.question-indicate').text(" "+qNum+" ");
+    }
+    
 })
 
 $('#nextButton').click((e)=>{
@@ -90,16 +96,9 @@ $('#nextButton-D').click((e)=>{
 })
 
 var newUrl = "../pages/load.html";
+var allAnswered = 0;
 
 $('#finish').click((e)=>{
-    for ( i=0; i<7; i++){
-        if (ans_data[i].selectedAns == '') { 
-            window.alert(`답하지 않은 질문이 있습니다 : ${i+1} 번`); 
-            
-        } else {
-            sessionStorage.setItem('answers_data', JSON.stringify(ans_data));
-            window.location.href = newUrl;
-        }
-    }
-    
+    sessionStorage.setItem('answers_data', JSON.stringify(ans_data));
+    window.location.href = newUrl;
 });

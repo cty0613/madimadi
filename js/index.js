@@ -12,7 +12,7 @@ $('.svg-refresh').click((e)=>{
 // the player
 const player = new Tone.Player({
     url: "./src/madi_x/Result_02.mp3",
-    loop: false,
+    loop: true,
     autostart: true,
 }).toDestination();
 

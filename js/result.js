@@ -180,3 +180,16 @@ d3.xml(graphicInfo[3]).then(function(xml) {
 // $('.graphic-chord').css('fill', colorInfo[2]);
 // $('.graphic-drumset').css('fill', colorInfo[3])
 // $('.graphic-melody').css('fill',colorInfo[4]);
+
+
+// Save Graphics
+
+$('#btnSave').on('click', function(){
+    html2canvas($('#contentToSave')[0]).then(function(canvas) {
+        var imgData = canvas.toDataURL('image/png');
+        var a = document.createElement('a');
+        a.href = imgData;
+        a.download = 'content.png';
+        a.click();
+    });
+});
