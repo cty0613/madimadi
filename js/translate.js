@@ -54,7 +54,7 @@ export default function translate(q2, q5, q7) {
         buttonset = "5-sel-4";
         genre = "펑크";
         break;
-    case 4 :
+    case 5 :
         buttonset = "5-sel-5";
         genre = "발라드";
         break;

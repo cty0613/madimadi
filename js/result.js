@@ -33,7 +33,7 @@ console.log(MixedInfo);
 2: 80 (InstrRefBPM)
 3: "Comfort" (Mood)
 4: "GrvRnBFunk_Bass_80" (Bass)
-5: "GrvRnBFunk_EG_80" (Instr) 
+5: "GrvRnBFunk_EG_80" (Instr)
 6:  (Drum Adjusted BPM)
 7:  (Instr Adjusted BPM)
 */
@@ -150,14 +150,12 @@ d3.xml("../src/graphics/area_chord_lines.svg").then(function(xml){
     document.getElementById("graphic-lines").appendChild(xml.documentElement);
     d3.selectAll('#graphic-lines circle, #graphic-lines path, #graphic-lines rect, #graphic-lines ellipse, #graphic-linse line').style('fill', colorInfo[0]); // Change fill color to user input color
     d3.selectAll('#graphic-lines line').style('stroke', colorInfo[0]); // Change fill color to user input color
-
 });
 
 d3.xml(graphicInfo[0]).then(function(xml) {
     document.getElementById("graphic-instr").appendChild(xml.documentElement);
     d3.selectAll('#graphic-instr circle, #graphic-instr path, #graphic-instr rect, #graphic-instr ellipse, #graphic-instr line').style('fill', colorInfo[1]); // Change fill color to user input color
     d3.selectAll('#graphic-instr path').style('stroke', colorInfo[1]); // Change fill color to user input color
-
 });
 
 d3.xml(graphicInfo[1]).then(function(xml) {
